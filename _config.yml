@@ -1,8 +1,8 @@
-title: Webjeda Slides
-description: Webjeda slides is built using revealjs. The idea is to keep all the slideshows in one place as posts. All your presentations can be accessed from one place!
+title: slides Proesaiento de datos en la nube
+description: Enfoque y desarrollo en la inforación en slides al desarrollo de la nube
 
-#baseurl: "/slides" # the subpath of your site, e.g. /blog
-url: "http://webjeda.com" # the base hostname & protocol for your site
+baseurl: "/Presentaciones-procesamiento-datos_en-la-nube" # the subpath of your site, e.g. /blog
+url: "https://github.com/AramMartinezMendez" # the base hostname & protocol for your site
 permalink: /:title/
 
 
