@@ -88,7 +88,7 @@ layout: slide
     <!-- DIApositiva VERTICAL 1: El mapa -->
     <section>
         <h2>🗺️ Mapa conceptual: Pizza as a Service 2.0</h2>
-        <img src="{{ site.baseurl }}/images/pizza-as-service.jpg" alt="Mapa" style="max-width: 70%; margin: 0 auto; display: block;">
+        <img src="{{ site.baseurl }}/images/pizza-service" alt="Mapa" style="max-width: 70%; margin: 0 auto; display: block;">
         <p><small>Fuente: Paul Kerrison</small></p>
     </section>
     
@@ -98,12 +98,12 @@ layout: slide
         <p>Este mapa muestra cómo <strong>delegar responsabilidades</strong> cambia según el modelo de servicio.</p>
         
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; text-align: left; font-size: 0.7em;">
-            <div><h4>🏠 On-Premise</h4><p>Tú gestionas TODO</p></div>
-            <div><h4>📦 IaaS</h4><p>Tú: SO y apps | Proveedor: Hardware</p></div>
-            <div><h4>🐳 CaaS</h4><p>Tú: Contenedores | Proveedor: Infraestructura</p></div>
-            <div><h4>🚚 PaaS</h4><p>Tú: Solo tu app | Proveedor: Lo demás</p></div>
-            <div><h4>⚡ FaaS</h4><p>Tú: Solo funciones | Proveedor: Escalado</p></div>
-            <div><h4>🍕 SaaS</h4><p>Tú: Solo usar | Proveedor: Todo</p></div>
+            <div><h4> On-Premise</h4><p>Tú gestionas TODO</p></div>
+            <div><h4> IaaS</h4><p>Tú: SO y apps | Proveedor: Hardware</p></div>
+            <div><h4> CaaS</h4><p>Tú: Contenedores | Proveedor: Infraestructura</p></div>
+            <div><h4>PaaS</h4><p>Tú: Solo tu app | Proveedor: Lo demás</p></div>
+            <div><h4> FaaS</h4><p>Tú: Solo funciones | Proveedor: Escalado</p></div>
+            <div><h4> SaaS</h4><p>Tú: Solo usar | Proveedor: Todo</p></div>
         </div>
         
         <p style="margin-top: 20px; font-style: italic;">💡 La línea vertical separa responsabilidades</p>
@@ -111,11 +111,11 @@ layout: slide
 </section>
 
 <section>
-    <h2>🎯 Conclusión del mapa</h2>
+    <h2> Conclusión del mapa</h2>
     <p>La línea vertical en el mapa separa:</p>
     <ul>
         <li><strong>🔵 Lado izquierdo (Tú gestionas):</strong> Mayor control, mayor responsabilidad.</li>
         <li><strong>🔴 Lado derecho (Proveedor gestiona):</strong> Menos control, menos trabajo operativo.</li>
     </ul>
-    <p>💡 <strong>Elección estratégica:</strong> El modelo correcto depende de tu negocio. Si tu ventaja es el software, usa PaaS/FaaS. Si necesitas control total del hardware, usa IaaS u On-Premise.</p>
+    <p> <strong>Elección estratégica:</strong> El modelo correcto depende de tu negocio. Si tu ventaja es el software, usa PaaS/FaaS. Si necesitas control total del hardware, usa IaaS u On-Premise.</p>
 </section>
