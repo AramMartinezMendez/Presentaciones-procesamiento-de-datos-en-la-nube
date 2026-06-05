@@ -1,47 +1,55 @@
 ---
-layout: slide
+layout: reveal
 title: Virtualización en TIC
 ---
 
-# Solución estratificada de problemas en TIC
 
-_Una visión general_
 
----
+<section data-markdown>
+  <textarea data-template>
 
-## 1.1.a Virtualización por interpretación pura
+    # Solución estratificada de problemas en TIC
 
-**Descripción:** El software emula completamente el hardware.
+    *Una visión general*
 
-### Características:
-- Emulación completa de CPU, memoria y periféricos
-- Aislamiento total del hardware anfitrión
-- Rendimiento más bajo
+    ---
 
-**Ejemplos:** QEMU, Bochs
+    ## 1.1.a Virtualización por interpretación pura
 
----
+    **Descripción:** El software emula completamente el hardware.
 
-## 1.1.b Virtualización por recompilación dinámica
+    ### Características:
+    - Emulación completa de CPU, memoria y periféricos
+    - Aislamiento total del hardware anfitrión
+    - Rendimiento más bajo
 
-**Descripción:** Traduce bloques de código a código nativo en tiempo real.
+    **Ejemplos:** QEMU, Bochs
 
-### Características:
-- Traducción de bloques básicos
-- Caché de código traducido
-- Rendimiento medio
+    ---
 
-**Ejemplos:** VirtualBox, DynamoRIO, QEMU
+    ## 1.1.b Virtualización por recompilación dinámica
 
----
+    **Descripción:** Traduce bloques de código a código nativo en tiempo real.
 
-## 1.1.c Virtualización por hipervisión (bare metal)
+    ### Características:
+    - Traducción de bloques básicos
+    - Caché de código traducido
+    - Rendimiento medio
 
-**Descripción:** Hipervisor Tipo 1 que se ejecuta directamente sobre el hardware.
+    **Ejemplos:** VirtualBox, DynamoRIO, QEMU
 
-### Características:
-- Acceso directo al hardware
-- Mínima sobrecarga
-- Máximo rendimiento y seguridad
+    ---
 
-**Ejemplos:** VMware ESXi, Hyper-V, KVM
+    ## 1.1.c Virtualización por hipervisión (bare metal)
+
+    **Descripción:** Hipervisor Tipo 1 que se ejecuta directamente sobre el hardware.
+
+    ### Características:
+    - Acceso directo al hardware
+    - Mínima sobrecarga
+    - Máximo rendimiento y seguridad
+
+    **Ejemplos:** VMware ESXi, Hyper-V, KVM
+
+  </textarea>
+</section>
