@@ -32,3 +32,11 @@ color-8: '##1abc9c'
 collections:
   slides:
     output: true
+    
+# ... tus configuraciones existentes como title, description, baseurl, collections, etc.
+
+# Configuración para las diapositivas
+reveal:
+  # El separador común es "----" en markdown, que se traduce a <hr /> en HTML
+  slide_separator: "<hr />"
+  # Con este separador, Jekyll buscará "----" en tu archivo .md
