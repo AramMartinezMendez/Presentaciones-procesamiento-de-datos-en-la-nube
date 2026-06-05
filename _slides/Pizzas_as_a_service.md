@@ -83,51 +83,32 @@ layout: slide
 
 <!-- explicacion del esquema -->
 
+<!-- DIApositiva PADRE (contiene el mapa y la explicación como slides verticales) -->
 <section>
-    <h2>🗺️ Mapa conceptual: Pizza as a Service 2.0</h2>
+    <!-- DIApositiva VERTICAL 1: El mapa -->
+    <section>
+        <h2>🗺️ Mapa conceptual: Pizza as a Service 2.0</h2>
+        <img src="{{ site.baseurl }}/images/pizza-as-service.jpg" alt="Mapa" style="max-width: 70%; margin: 0 auto; display: block;">
+        <p><small>Fuente: Paul Kerrison</small></p>
+    </section>
     
-    <!-- La imagen siempre visible -->
-    <img src="{{ site.baseurl }}/images/pizza-service.png" alt="Mapa de Pizza as a Service 2.0" style="max-width: 70%; height: auto; margin: 0 auto; display: block;">
-    
-    <p><small>Fuente: Paul Kerrison - http://www.paulkerrison.co.uk</small></p>
-    
-    <!-- Fragmento: aparece al presionar ↓ -->
-    <div class="fragment">
-        <hr>
+    <!-- DIApositiva VERTICAL 2: La explicación (se accede con ↓) -->
+    <section>
         <h3>📖 Explicación del mapa</h3>
-        <p>Este mapa muestra cómo <strong>delegar responsabilidades</strong> cambia según el modelo de servicio:</p>
+        <p>Este mapa muestra cómo <strong>delegar responsabilidades</strong> cambia según el modelo de servicio.</p>
         
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; text-align: left; font-size: 0.8em;">
-            <div>
-                <h4>🏠 On-Premise</h4>
-                <p><strong>Tú gestionas TODO</strong><br><em>Servidor físico en tu oficina</em></p>
-            </div>
-            <div>
-                <h4>📦 IaaS</h4>
-                <p><strong>Tú:</strong> SO y apps<br><strong>Proveedor:</strong> Hardware<br><em>AWS EC2</em></p>
-            </div>
-            <div>
-                <h4>🐳 CaaS</h4>
-                <p><strong>Tú:</strong> Contenedores<br><strong>Proveedor:</strong> Infraestructura<br><em>AWS ECS, GKE</em></p>
-            </div>
-            <div>
-                <h4>🚚 PaaS</h4>
-                <p><strong>Tú:</strong> Solo tu app<br><strong>Proveedor:</strong> Todo lo demás<br><em>Heroku, App Engine</em></p>
-            </div>
-            <div>
-                <h4>⚡ FaaS</h4>
-                <p><strong>Tú:</strong> Solo funciones<br><strong>Proveedor:</strong> Escalado<br><em>AWS Lambda</em></p>
-            </div>
-            <div>
-                <h4>🍕 SaaS</h4>
-                <p><strong>Tú:</strong> Solo usar<br><strong>Proveedor:</strong> Todo<br><em>Gmail, Netflix</em></p>
-            </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; text-align: left; font-size: 0.7em;">
+            <div><h4>🏠 On-Premise</h4><p>Tú gestionas TODO</p></div>
+            <div><h4>📦 IaaS</h4><p>Tú: SO y apps | Proveedor: Hardware</p></div>
+            <div><h4>🐳 CaaS</h4><p>Tú: Contenedores | Proveedor: Infraestructura</p></div>
+            <div><h4>🚚 PaaS</h4><p>Tú: Solo tu app | Proveedor: Lo demás</p></div>
+            <div><h4>⚡ FaaS</h4><p>Tú: Solo funciones | Proveedor: Escalado</p></div>
+            <div><h4>🍕 SaaS</h4><p>Tú: Solo usar | Proveedor: Todo</p></div>
         </div>
         
-        <p class="fragment" style="margin-top: 20px; font-style: italic;">💡 La línea vertical separa lo que tú gestionas (izquierda) del proveedor (derecha)</p>
-    </div>
+        <p style="margin-top: 20px; font-style: italic;">💡 La línea vertical separa responsabilidades</p>
+    </section>
 </section>
-
 
 <section>
     <h2>🎯 Conclusión del mapa</h2>
