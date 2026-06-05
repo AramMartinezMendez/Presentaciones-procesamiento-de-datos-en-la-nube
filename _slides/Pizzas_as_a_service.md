@@ -88,7 +88,7 @@ layout: slide
     <!-- DIApositiva VERTICAL 1: El mapa -->
     <section>
         <h2>🗺️ Mapa conceptual: Pizza as a Service 2.0</h2>
-        <img src="{{ site.baseurl }}/images/pizza-service" alt="Mapa" style="max-width: 70%; margin: 0 auto; display: block;">
+        <img src="{{ site.baseurl }}/images/pizza-service.png" alt="Mapa" style="max-width: 70%; margin: 0 auto; display: block;">
         <p><small>Fuente: Paul Kerrison</small></p>
     </section>
     
@@ -105,7 +105,6 @@ layout: slide
             <div><h4> FaaS</h4><p>Tú: Solo funciones | Proveedor: Escalado</p></div>
             <div><h4> SaaS</h4><p>Tú: Solo usar | Proveedor: Todo</p></div>
         </div>
-        
         <p style="margin-top: 20px; font-style: italic;">💡 La línea vertical separa responsabilidades</p>
     </section>
 </section>
