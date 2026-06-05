@@ -81,55 +81,53 @@ layout: slide
     <p>El modelo adecuado depende del balance que necesites entre <strong>flexibilidad</strong> y <strong>comodidad</strong>.</p>
 </section>
 
+<!-- explicacion del esquema -->
 
 <section>
-    <h2>🗺️ Mapa conceptual: Pizza as a Service 2.0</h2>
+    <h2> Mapa conceptual: Pizza as a Service 2.0</h2>
     <img src="{{ site.baseurl }}/images/pizza-service.png" alt="Mapa de Pizza as a Service 2.0" style="max-width: 80%; height: auto; margin: 0 auto; display: block;">
     <p><small>Fuente: Paul Kerrison - http://www.paulkerrison.co.uk</small></p>
 </section>
 
-<section>
-    <h2>📖 Explicación del mapa</h2>
-    <p>Este mapa muestra cómo <strong>delegar responsabilidades</strong> cambia según el modelo de servicio:</p>
-    
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left;">
-        <div>
-            <h3>🏠 Tradición → On-Premise</h3>
-            <p><strong>Tú gestionas TODO:</strong> desde la masa (hardware) hasta el horneado (aplicaciones).</p>
-            <p><em>Ejemplo: Servidor físico en tu oficina.</em></p>
+<!-- aqui va la explicacion del mapa antes de dezlizar xd-->
+
+    <!-- Fragmento: aparece al presionar ↓ -->
+    <div class="fragment">
+        <hr>
+        <h3>📖 Explicación del mapa</h3>
+        <p>Este mapa muestra cómo <strong>delegar responsabilidades</strong> cambia según el modelo de servicio:</p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; text-align: left; font-size: 0.8em;">
+            <div>
+                <h4>🏠 On-Premise</h4>
+                <p><strong>Tú gestionas TODO</strong><br><em>Servidor físico en tu oficina</em></p>
+            </div>
+            <div>
+                <h4>📦 IaaS</h4>
+                <p><strong>Tú:</strong> SO y apps<br><strong>Proveedor:</strong> Hardware<br><em>AWS EC2</em></p>
+            </div>
+            <div>
+                <h4>🐳 CaaS</h4>
+                <p><strong>Tú:</strong> Contenedores<br><strong>Proveedor:</strong> Infraestructura<br><em>AWS ECS, GKE</em></p>
+            </div>
+            <div>
+                <h4>🚚 PaaS</h4>
+                <p><strong>Tú:</strong> Solo tu app<br><strong>Proveedor:</strong> Todo lo demás<br><em>Heroku, App Engine</em></p>
+            </div>
+            <div>
+                <h4>⚡ FaaS</h4>
+                <p><strong>Tú:</strong> Solo funciones<br><strong>Proveedor:</strong> Escalado<br><em>AWS Lambda</em></p>
+            </div>
+            <div>
+                <h4>🍕 SaaS</h4>
+                <p><strong>Tú:</strong> Solo usar<br><strong>Proveedor:</strong> Todo<br><em>Gmail, Netflix</em></p>
+            </div>
         </div>
-        <div>
-            <h3>📦 IaaS</h3>
-            <p><strong>Tú gestionas:</strong> Sistema Operativo y aplicaciones.</p>
-            <p><strong>Proveedor gestiona:</strong> Hardware y virtualización.</p>
-            <p><em>Ejemplo: AWS EC2, Google Compute Engine.</em></p>
-        </div>
-        <div>
-            <h3>📦 CaaS</h3>
-            <p><strong>Tú gestionas:</strong> Contenedores y código.</p>
-            <p><strong>Proveedor gestiona:</strong> Infraestructura y orquestación.</p>
-            <p><em>Ejemplo: AWS ECS, Google Kubernetes Engine.</em></p>
-        </div>
-        <div>
-            <h3>🚚 PaaS</h3>
-            <p><strong>Tú gestionas:</strong> Solo tu aplicación y datos.</p>
-            <p><strong>Proveedor gestiona:</strong> Todo lo demás.</p>
-            <p><em>Ejemplo: Heroku, Google App Engine.</em></p>
-        </div>
-        <div>
-            <h3>🍽️ FaaS (Serverless)</h3>
-            <p><strong>Tú gestionas:</strong> Solo el código de las funciones.</p>
-            <p><strong>Proveedor gestiona:</strong> Escalado y ejecución bajo demanda.</p>
-            <p><em>Ejemplo: AWS Lambda, Google Cloud Functions.</em></p>
-        </div>
-        <div>
-            <h3>🍕 SaaS</h3>
-            <p><strong>Tú gestionas:</strong> Solo usar el software.</p>
-            <p><strong>Proveedor gestiona:</strong> Todo (infraestructura, datos, seguridad).</p>
-            <p><em>Ejemplo: Gmail, Netflix, Office 365.</em></p>
-        </div>
+        
+        <p class="fragment" style="margin-top: 20px; font-style: italic;">💡 La línea vertical separa lo que tú gestionas (izquierda) del proveedor (derecha)</p>
     </div>
 </section>
+
 
 <section>
     <h2>🎯 Conclusión del mapa</h2>
