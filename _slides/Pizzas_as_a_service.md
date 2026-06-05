@@ -84,13 +84,13 @@ layout: slide
 <!-- explicacion del esquema -->
 
 <section>
-    <h2> Mapa conceptual: Pizza as a Service 2.0</h2>
-    <img src="{{ site.baseurl }}/images/pizza-service.png" alt="Mapa de Pizza as a Service 2.0" style="max-width: 80%; height: auto; margin: 0 auto; display: block;">
+    <h2>🗺️ Mapa conceptual: Pizza as a Service 2.0</h2>
+    
+    <!-- La imagen siempre visible -->
+    <img src="{{ site.baseurl }}/images/pizza-service.png" alt="Mapa de Pizza as a Service 2.0" style="max-width: 70%; height: auto; margin: 0 auto; display: block;">
+    
     <p><small>Fuente: Paul Kerrison - http://www.paulkerrison.co.uk</small></p>
-</section>
-
-<!-- aqui va la explicacion del mapa antes de dezlizar xd-->
-
+    
     <!-- Fragmento: aparece al presionar ↓ -->
     <div class="fragment">
         <hr>
