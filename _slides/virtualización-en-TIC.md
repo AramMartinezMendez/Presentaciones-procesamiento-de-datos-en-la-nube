@@ -1,6 +1,7 @@
 ---
-title: Virtualización en TIC
 layout: slide
+title: Virtualización en TIC
+
 ---
 
 # Solución estratificada de problemas en TIC
