@@ -1,55 +1,37 @@
----
-layout: reveal
-title: Virtualización en TIC
----
-
-
-
-<section data-markdown>
-  <textarea data-template>
-
-    # Solución estratificada de problemas en TIC
-
-    *Una visión general*
-
-    ---
-
-    ## 1.1.a Virtualización por interpretación pura
-
-    **Descripción:** El software emula completamente el hardware.
-
-    ### Características:
-    - Emulación completa de CPU, memoria y periféricos
-    - Aislamiento total del hardware anfitrión
-    - Rendimiento más bajo
-
-    **Ejemplos:** QEMU, Bochs
-
-    ---
-
-    ## 1.1.b Virtualización por recompilación dinámica
-
-    **Descripción:** Traduce bloques de código a código nativo en tiempo real.
-
-    ### Características:
-    - Traducción de bloques básicos
-    - Caché de código traducido
-    - Rendimiento medio
-
-    **Ejemplos:** VirtualBox, DynamoRIO, QEMU
-
-    ---
-
-    ## 1.1.c Virtualización por hipervisión (bare metal)
-
-    **Descripción:** Hipervisor Tipo 1 que se ejecuta directamente sobre el hardware.
-
-    ### Características:
-    - Acceso directo al hardware
-    - Mínima sobrecarga
-    - Máximo rendimiento y seguridad
-
-    **Ejemplos:** VMware ESXi, Hyper-V, KVM
-
-  </textarea>
-</section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>{{ page.title | default: site.title }}</title>
+    
+    <!-- Estilos de Reveal.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/black.css">
+    
+    <!-- Estilos personalizados si existen -->
+    {% if site.custom_css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
+    {% endif %}
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            {{ content }}
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/markdown/markdown.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            slideNumber: true,
+            plugins: [ RevealMarkdown ]
+        });
+    </script>
+</body>
+</html>
