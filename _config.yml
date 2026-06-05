@@ -1,7 +1,7 @@
 title: slides Procesaiento de datos en la nube
 description: Enfoque y desarrollo en la inforación en slides al desarrollo de la nube
 
-baseurl: "/Presentaciones-procesamiento-datos_en-la-nube" # the subpath of your site, e.g. /blog
+baseurl: "/Presentaciones-procesamiento-de-datos-en-la-nube" # the subpath of your site, e.g. /blog
 url: "https://github.com/AramMartinezMendez" # the base hostname & protocol for your site
 permalink: /:title/
 
