@@ -45,7 +45,7 @@ layout: slide
 </section>
 
 <section>
-    <h2>📊 Comparativa</h2>
+    <h2> Comparativa</h2>
     <table>
         <tr><th>Método</th><th>Rendimiento</th><th>Aislamiento</th></tr>
         <tr><td>Interpretación pura</td><td>Bajo</td><td>Alto</td></tr>
