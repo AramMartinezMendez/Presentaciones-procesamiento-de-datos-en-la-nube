@@ -3,6 +3,6 @@ title: ¡Funciona!
 layout: slide
 ---
 
-# ¡Mi presentación funciona!
+#  funciona xd
 
-Ahora sí puedo empezar a poner el contenido de mi tarea sobre virtualización.
+Ahora sí poner información XD.
