@@ -5,16 +5,18 @@ layout: slide
 
 # Solución estratificada de problemas en TIC
 
+---
+
 ## 1.1.a Virtualización por interpretación pura
 
 **Descripción:** El software emula completamente el hardware del sistema invitado.
 
-**Características:**
+### Características:
 - Emulación completa de CPU, memoria y periféricos
 - Aislamiento total del hardware anfitrión
 - Rendimiento más bajo
 
-**Casos de uso:**
+### Casos de uso:
 - Emulación de sistemas antiguos
 - Depuración y análisis de malware
 
@@ -26,12 +28,12 @@ layout: slide
 
 **Descripción:** Traduce bloques de código a código nativo en tiempo real.
 
-**Características:**
+### Características:
 - Traducción de bloques básicos
 - Caché de código traducido
 - Rendimiento medio
 
-**Casos de uso:**
+### Casos de uso:
 - Máquinas virtuales JVM/.NET
 - Emulación de arquitecturas diferentes
 
@@ -43,12 +45,12 @@ layout: slide
 
 **Descripción:** Hipervisor Tipo 1 que se ejecuta directamente sobre el hardware.
 
-**Características:**
+### Características:
 - Acceso directo al hardware
 - Mínima sobrecarga
 - Máximo rendimiento y seguridad
 
-**Casos de uso:**
+### Casos de uso:
 - Centros de datos y servidores
 - Infraestructura en la nube (IaaS)
 
@@ -56,7 +58,7 @@ layout: slide
 
 ---
 
-## 📊 Comparativa rápida
+## 📊 Comparativa
 
 | Método | Rendimiento | Aislamiento |
 |--------|-------------|-------------|
