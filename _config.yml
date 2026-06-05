@@ -28,3 +28,7 @@ color-6: '##1abc9c'
 color-7: '##1abc9c'
 color-8: '##1abc9c'
 
+# Configuración de colecciones para las diapositivas
+collections:
+  slides:
+    output: true
