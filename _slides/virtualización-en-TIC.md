@@ -1,25 +1,22 @@
 ---
 layout: slide
 title: Virtualización en TIC
-
 ---
 
 # Solución estratificada de problemas en TIC
+
+_Una visión general_
 
 ---
 
 ## 1.1.a Virtualización por interpretación pura
 
-**Descripción:** El software emula completamente el hardware del sistema invitado.
+**Descripción:** El software emula completamente el hardware.
 
 ### Características:
 - Emulación completa de CPU, memoria y periféricos
 - Aislamiento total del hardware anfitrión
 - Rendimiento más bajo
-
-### Casos de uso:
-- Emulación de sistemas antiguos
-- Depuración y análisis de malware
 
 **Ejemplos:** QEMU, Bochs
 
@@ -34,10 +31,6 @@ title: Virtualización en TIC
 - Caché de código traducido
 - Rendimiento medio
 
-### Casos de uso:
-- Máquinas virtuales JVM/.NET
-- Emulación de arquitecturas diferentes
-
 **Ejemplos:** VirtualBox, DynamoRIO, QEMU
 
 ---
@@ -51,18 +44,4 @@ title: Virtualización en TIC
 - Mínima sobrecarga
 - Máximo rendimiento y seguridad
 
-### Casos de uso:
-- Centros de datos y servidores
-- Infraestructura en la nube (IaaS)
-
 **Ejemplos:** VMware ESXi, Hyper-V, KVM
-
----
-
-## 📊 Comparativa
-
-| Método | Rendimiento | Aislamiento |
-|--------|-------------|-------------|
-| Interpretación pura | Bajo | Alto |
-| Recompilación dinámica | Medio | Medio |
-| Hipervisión bare metal | Alto | Muy alto |
