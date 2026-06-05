@@ -30,20 +30,13 @@ layout: compress
  
  <p class="head-text">What if you can manage all your presentations from one place?!</p>
  
-{% for post in site.posts %}                              
+<!-- {% for post in site.posts %}  --> 
+	{% for slide in site.slides %}		
                                
-    <a target="_blank" class="link" href="{{site.baseurl}}{{post.url}}"> 
-       
-        <div class="card" style="background-color: {% cycle '#e74c3c', '#1abc9c', '#e67e22', '#34495e', '#f1c40f', '#3498db', '#2ecc71', '#9b59b6' %}" >
-           <div class="card-number">
-               {{forloop.rindex}}
-           </div>
-            <div class="card-title">
-                {{ post.title | truncate: 13 }}
-            </div>
-        </div>
+    <a target="_blank" class="link" href="{{site.baseurl}}{{slide.url}}"> 
+        <div class="card-number">{{ forloop.rindex }}</div>
+        <div class="card-title">{{ slide.title | truncate: 13 }}</div>
     </a>
-          
 {% endfor %}
         </div>
          {% include analytics.html %}
