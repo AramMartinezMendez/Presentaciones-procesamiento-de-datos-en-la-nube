@@ -84,7 +84,7 @@ layout: slide
 
 <section>
     <h2>🗺️ Mapa conceptual: Pizza as a Service 2.0</h2>
-    <img src="{{ site.baseurl }}/images/pizza-serive.png" alt="Mapa de Pizza as a Service 2.0" style="max-width: 80%; height: auto; margin: 0 auto; display: block;">
+    <img src="{{ site.baseurl }}/images/pizza-service.png" alt="Mapa de Pizza as a Service 2.0" style="max-width: 80%; height: auto; margin: 0 auto; display: block;">
     <p><small>Fuente: Paul Kerrison - http://www.paulkerrison.co.uk</small></p>
 </section>
 
