@@ -1,3 +1,3 @@
-sitio: [http://webjeda.com/slides](link)
+sitio: [[http://webjeda.com/slides](https://arammartinezmendez.github.io/Presentaciones-procesamiento-de-datos-en-la-nube/slides/Apache-Hive/#/)](link)
 
   
