@@ -148,7 +148,7 @@ layout: slide
              style="max-width: 70%; height: auto; margin: 0 auto; display: block; border-radius: 8px;">
              
             <li><strong>Función:</strong> Almacena todos los metadatos de las tablas (esquemas, particiones, ubicación en HDFS).</li>
-            <li><strong>Base de datos:</strong> Suele usar una base de datos externa como MySQL, PostgreSQL o Derby.</li>
+           
         </ul>
         <p style="margin-top: 20px; font-style: italic; font-size: 0.8em;">
             🔽  Presiona presiona para ir abajo xd
