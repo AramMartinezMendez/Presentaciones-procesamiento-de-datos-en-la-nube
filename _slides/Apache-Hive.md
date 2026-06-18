@@ -57,6 +57,23 @@ layout: slide
     </ul>
 </section>
 
+<!-- DIApositiva VERTICAL 2: La explicación (se accede con ↓) -->
+<section>
+    <h3>📖 Explicación del mapa</h3>
+    <p>Este mapa muestra cómo <strong>delegar responsabilidades</strong> cambia según el modelo de servicio.</p>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; text-align: left; font-size: 0.7em;">
+        <div><h4> On-Premise</h4><p>Tú gestionas TODO</p></div>
+        <div><h4> IaaS</h4><p>Tú: SO y apps | Proveedor: Hardware</p></div>
+        <div><h4> CaaS</h4><p>Tú: Contenedores | Proveedor: Infraestructura</p></div>
+        <div><h4>PaaS</h4><p>Tú: Solo tu app | Proveedor: Lo demás</p></div>
+        <div><h4> FaaS</h4><p>Tú: Solo funciones | Proveedor: Escalado</p></div>
+        <div><h4> SaaS</h4><p>Tú: Solo usar | Proveedor: Todo</p></div>
+    </div>
+    <p style="margin-top: 20px; font-style: italic;"> La línea vertical separa responsabilidades</p>
+
+</section>
+
 <section>
     <h2>📈 ¿Es eficaz?</h2>
     <p>Sí, y los datos lo demuestran. Su eficacia se basa en la optimización:</p>
