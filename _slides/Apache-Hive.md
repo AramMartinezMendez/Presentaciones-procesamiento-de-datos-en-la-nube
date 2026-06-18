@@ -112,10 +112,7 @@ layout: slide
 
 
 
----
-title: Apache Hive - Arquitectura
-layout: slide
----
+
 
 <!-- SLIDE PRINCIPAL: IMAGEN + DESCRIPCIÓN CORTA -->
 <section>
