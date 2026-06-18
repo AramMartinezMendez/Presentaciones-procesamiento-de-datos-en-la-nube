@@ -149,7 +149,6 @@ layout: slide
              
             <li><strong>Función:</strong> Almacena todos los metadatos de las tablas (esquemas, particiones, ubicación en HDFS).</li>
             <li><strong>Base de datos:</strong> Suele usar una base de datos externa como MySQL, PostgreSQL o Derby.</li>
-            <li><strong>Importancia:</strong> Permite que múltiples herramientas (Hive, Spark, Impala) accedan a la misma información de forma consistente.</li>
         </ul>
         <p style="margin-top: 20px; font-style: italic; font-size: 0.8em;">
             🔽  Presiona presiona para ir abajo xd
@@ -165,7 +164,6 @@ layout: slide
         <ul>
             <li><strong>Función:</strong> Analiza las consultas HiveQL y elige el plan de ejecución más eficiente.</li>
             <li><strong>Beneficio:</strong> Puede reducir el tiempo de ejecución de consultas complejas hasta en un <strong>40%</strong>.</li>
-            <li><strong>Herramientas:</strong> Utiliza estadísticas de las tablas (número de filas, tamaño, etc.) para tomar decisiones.</li>
         </ul>
         <p style="margin-top: 20px; font-style: italic; font-size: 0.8em;">
             🔽  Presiona presiona para ir abajo xd
