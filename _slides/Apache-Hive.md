@@ -105,7 +105,7 @@ layout: slide
     <p>Sí, y los datos lo demuestran. Su eficacia se basa en la optimización:</p>
     <ul>
         <li><strong>Uso de formatos columnar (ORC/Parquet):</strong> Puede <strong>reducir el espacio de almacenamiento hasta en un 90%</strong> y <strong>acelerar las consultas entre 3 y 4 veces</strong> más rápido que los formatos de texto plano .</li>
-        <li><strong>Optimizador de costes (CBO):</strong> Puede <strong>reducir el tiempo de ejecución de consultas complejas en casi un 40%</strong> .</li>
+        <li><strong>Optimizador de costes :</strong> Puede <strong>reducir el tiempo de ejecución de consultas complejas en casi un 40%</strong> .</li>
         
     </ul>
 </section>
@@ -122,16 +122,16 @@ layout: slide
         
         <!-- 
         👇 AQUÍ PONES LA DIRECCIÓN DE TU IMAGEN 
-        Reemplaza "nombre-de-tu-imagen.png" por el nombre real
+        Reemplaza "practica1.jpeg" por el nombre real
         -->
-        <img src="{{ site.baseurl }}/images/nombre-de-tu-imagen.png" 
-             alt="Arquitectura de Apache Hive" 
+        <img src="{{ site.baseurl }}/images/practica1.jpeg" 
+             alt="Congiguración" 
              style="max-width: 70%; height: auto; margin: 0 auto; display: block; border-radius: 8px;">
         
         <p style="margin-top: 15px; font-size: 0.9em;">
             <strong>Descripción:</strong> La arquitectura de Hive se compone de un <strong>Metastore</strong> que guarda los metadatos, 
             un <strong>Optimizador</strong> que mejora el rendimiento de las consultas, y un <strong>Motor de ejecución</strong> 
-            que traduce HiveQL a trabajos de MapReduce, Tez o Spark.
+            
         </p>
         
         <p style="margin-top: 20px; font-style: italic; font-size: 0.8em;">
@@ -143,6 +143,10 @@ layout: slide
     <section>
         <h2> Componente 1: Metastore</h2>
         <ul>
+        <img src="{{ site.baseurl }}/images/practica2.jpeg" 
+             alt="Congiguración" 
+             style="max-width: 70%; height: auto; margin: 0 auto; display: block; border-radius: 8px;">
+             
             <li><strong>Función:</strong> Almacena todos los metadatos de las tablas (esquemas, particiones, ubicación en HDFS).</li>
             <li><strong>Base de datos:</strong> Suele usar una base de datos externa como MySQL, PostgreSQL o Derby.</li>
             <li><strong>Importancia:</strong> Permite que múltiples herramientas (Hive, Spark, Impala) accedan a la misma información de forma consistente.</li>
@@ -154,7 +158,10 @@ layout: slide
     
     <!-- Sub-diapositiva 3: Detalle 2 -->
     <section>
-        <h2>⚡ Componente 2: Optimizador de Costes (CBO)</h2>
+        <h2> Componente 2: Optimizador de Costes (CBO)</h2>
+        <img src="{{ site.baseurl }}/images/practica3.jpeg" 
+             alt="Congiguración" 
+             style="max-width: 70%; height: auto; margin: 0 auto; display: block; border-radius: 8px;">
         <ul>
             <li><strong>Función:</strong> Analiza las consultas HiveQL y elige el plan de ejecución más eficiente.</li>
             <li><strong>Beneficio:</strong> Puede reducir el tiempo de ejecución de consultas complejas hasta en un <strong>40%</strong>.</li>
@@ -167,7 +174,7 @@ layout: slide
     
     <!-- Sub-diapositiva 4: Detalle 3 -->
     <section>
-        <h2>🚀 Componente 3: Motores de ejecución</h2>
+        <h2> Componente 3: Motores de ejecución</h2>
         <ul>
             <li><strong>MapReduce:</strong> El motor clásico, estable pero más lento para consultas complejas.</li>
             <li><strong>Apache Tez:</strong> Mejora el rendimiento al reducir la sobrecarga de E/S y agilizar los trabajos.</li>
