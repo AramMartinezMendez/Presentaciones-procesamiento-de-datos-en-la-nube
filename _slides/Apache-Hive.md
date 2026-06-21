@@ -3,183 +3,362 @@ title: Apache Hive
 layout: slide
 ---
 
-<section>
-    <h1>🐝 Apache Hive</h1>
-    <p><em>El puente entre SQL y el Big Data</em></p>
-    <p><small>Un data warehouse para Hadoop</small></p>
+<!-- ============================================ -->
+<!-- SLIDE 1: PORTADA                             -->
+<!-- ============================================ -->
+<section style="text-align: center; background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+        <span style="font-size: 4em; display: block; margin-bottom: 20px;">🐝</span>
+        <h1 style="font-size: 3.5em; background: linear-gradient(to right, #f7971e, #ffd200); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 0;">Apache Hive</h1>
+        <p style="font-size: 1.8em; color: #e0e0e0; margin: 10px 0 5px 0;"><em>El puente entre SQL y el Big Data</em></p>
+        <div style="width: 80px; height: 4px; background: linear-gradient(to right, #f7971e, #ffd200); margin: 15px auto;"></div>
+        <p style="font-size: 1.2em; color: #aaa; letter-spacing: 2px;">⚡ Data Warehouse para Hadoop</p>
+        <p style="font-size: 0.8em; color: #666; margin-top: 40px;">Presiona → para comenzar</p>
+    </div>
 </section>
 
-
-<!-- DIApositiva 2: ¿QUÉ ES? -->
-<section>
-    <h2> ¿Qué es Apache Hive?</h2>
-    <p>Es un <strong>sistema de almacenamiento de datos (Data Warehouse)</strong> construido sobre Apache Hadoop .</p>
-    <p>Su propósito es permitir que los analistas y desarrolladores realicen consultas sobre grandes conjuntos de datos en HDFS usando un lenguaje similar a SQL, llamado <strong>HiveQL</strong> .</p>
-    
+<!-- ============================================ -->
+<!-- SLIDE 2: ¿QUÉ ES?                           -->
+<!-- ============================================ -->
+<section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+            <span style="font-size: 2.5em;">📖</span>
+            <h2 style="margin: 0; color: #f7971e; font-size: 2.2em;">¿Qué es Apache Hive?</h2>
+        </div>
+        <div style="background: rgba(255,255,255,0.03); border-left: 4px solid #f7971e; padding: 25px 30px; border-radius: 8px;">
+            <p style="font-size: 1.2em; line-height: 1.6; color: #e6e6e6;">
+                Es un <strong style="color: #ffd200;">sistema de almacenamiento de datos (Data Warehouse)</strong> construido sobre Apache Hadoop.
+            </p>
+            <p style="font-size: 1.1em; line-height: 1.6; color: #ccc; margin-top: 15px;">
+                Su propósito es permitir que analistas y desarrolladores realicen consultas sobre grandes conjuntos de datos en HDFS usando un lenguaje similar a SQL, llamado <strong style="color: #f7971e;">HiveQL</strong>.
+            </p>
+        </div>
+        <div style="display: flex; gap: 30px; margin-top: 25px; justify-content: center;">
+            <div style="text-align: center; background: rgba(247, 151, 30, 0.1); padding: 15px 25px; border-radius: 10px; border: 1px solid rgba(247, 151, 30, 0.2);">
+                <span style="font-size: 1.8em; display: block;">📊</span>
+                <span style="color: #aaa; font-size: 0.85em;">Petabytes de datos</span>
+            </div>
+            <div style="text-align: center; background: rgba(247, 151, 30, 0.1); padding: 15px 25px; border-radius: 10px; border: 1px solid rgba(247, 151, 30, 0.2);">
+                <span style="font-size: 1.8em; display: block;">🔄</span>
+                <span style="color: #aaa; font-size: 0.85em;">SQL → MapReduce/Spark</span>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- DIApositiva 3: CARACTERÍSTICAS PRINCIPALES -->
-<section>
-    <h2> Características principales</h2>
-    <ul>
-        <li><strong>Interfaz SQL familiar:</strong> Baja barrera de entrada para quienes ya conocen SQL.</li>
-        <li><strong>Almacenamiento flexible:</strong> Funciona sobre sistemas de archivos como HDFS y Amazon S3 .</li>
-        <li><strong>Extensible:</strong> Soporta funciones personalizadas (UDF) para necesidades específicas .</li>
-        <li><strong>Metastore centralizado:</strong> Almacena los metadatos (esquemas de tablas) en una base de datos externa (ej. MySQL, PostgreSQL) .</li>
-        <li><strong>Optimización de costes (CBO):</strong> Mejora el rendimiento de las consultas complejas.</li>
-    </ul>
+<!-- ============================================ -->
+<!-- SLIDE 3: CARACTERÍSTICAS                     -->
+<!-- ============================================ -->
+<section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+            <span style="font-size: 2.5em;">⚙️</span>
+            <h2 style="margin: 0; color: #f7971e; font-size: 2.2em;">Características principales</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div style="background: rgba(255,255,255,0.03); padding: 18px 20px; border-radius: 10px; border-left: 3px solid #f7971e;">
+                <strong style="color: #ffd200;">🗄️ Interfaz SQL familiar</strong>
+                <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Baja barrera de entrada para quienes ya conocen SQL.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 18px 20px; border-radius: 10px; border-left: 3px solid #f7971e;">
+                <strong style="color: #ffd200;">☁️ Almacenamiento flexible</strong>
+                <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Funciona sobre HDFS, Amazon S3 y otros sistemas.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 18px 20px; border-radius: 10px; border-left: 3px solid #f7971e;">
+                <strong style="color: #ffd200;">🧩 Extensible</strong>
+                <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Soporta funciones personalizadas (UDF) en Java o Python.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 18px 20px; border-radius: 10px; border-left: 3px solid #f7971e;">
+                <strong style="color: #ffd200;">📁 Metastore centralizado</strong>
+                <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Metadatos en base de datos externa (MySQL, PostgreSQL).</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 18px 20px; border-radius: 10px; border-left: 3px solid #f7971e; grid-column: span 2;">
+                <strong style="color: #ffd200;">🚀 Optimización de costes (CBO)</strong>
+                <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Mejora el rendimiento de consultas complejas mediante un optimizador basado en costes.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- DIApositiva 4: VENTAJAS (con desplazamiento vertical) -->
+<!-- ============================================ -->
+<!-- SLIDE 4: VENTAJAS (vertical)                 -->
+<!-- ============================================ -->
 <section>
-    <!-- Sub-diapositiva superior: Título y primeros puntos -->
-    <section>
-        <h2> Ventajas</h2>
-        <ul>
-            <li><strong>Curva de aprendizaje suave:</strong> Ideal para equipos con experiencia en SQL. No se requiere programación compleja para análisis básicos .</li>
-            <li><strong>Escalabilidad masiva:</strong> Capacidad para procesar y analizar datos de petabytes, aprovechando el poder de un clúster Hadoop .</li>
-        </ul>
-        <p style="margin-top: 30px;"><small>Presiona la flecha hacia abajo (↓) para ver más ventajas</small></p>
+    <section style="background: linear-gradient(135deg, #0d2818, #1a3a2a);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                <span style="font-size: 2.5em;">✅</span>
+                <h2 style="margin: 0; color: #4ade80; font-size: 2.2em;">Ventajas</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div style="background: rgba(74, 222, 128, 0.05); padding: 18px 20px; border-radius: 10px; border: 1px solid rgba(74, 222, 128, 0.15);">
+                    <strong style="color: #4ade80;">📚 Curva de aprendizaje suave</strong>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Ideal para equipos con experiencia en SQL.</p>
+                </div>
+                <div style="background: rgba(74, 222, 128, 0.05); padding: 18px 20px; border-radius: 10px; border: 1px solid rgba(74, 222, 128, 0.15);">
+                    <strong style="color: #4ade80;">📈 Escalabilidad masiva</strong>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Capacidad para procesar petabytes de datos.</p>
+                </div>
+            </div>
+            <p style="margin-top: 30px; text-align: center; color: #666; font-size: 0.85em;">⬇️ Presiona la flecha hacia abajo para más ventajas</p>
+        </div>
     </section>
 
-    <!-- Sub-diapositiva inferior: Resto de ventajas -->
-    <section>
-        <h2 style="margin-top: 0;"> Ventajas </h2>
-        <ul>
-            <li><strong>Ecosistema maduro:</strong> Se integra con herramientas de BI (Tableau, PowerBI) y Machine Learning (Spark, Mahout) .</li>
-            <li><strong>Eficiencia en almacenamiento:</strong> Los formatos de archivo columnar (ORC, Parquet) reducen significativamente el espacio y mejoran la velocidad de lectura .</li>
-        </ul>
-        <p style="margin-top: 30px;"><small>Presiona la flecha hacia arriba (↑) para volver</small></p>
+    <section style="background: linear-gradient(135deg, #0d2818, #1a3a2a);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                <span style="font-size: 2.5em;">✅</span>
+                <h2 style="margin: 0; color: #4ade80; font-size: 2.2em;">Ventajas (continuación)</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div style="background: rgba(74, 222, 128, 0.05); padding: 18px 20px; border-radius: 10px; border: 1px solid rgba(74, 222, 128, 0.15);">
+                    <strong style="color: #4ade80;">🔗 Ecosistema maduro</strong>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Integración con BI (Tableau, PowerBI) y ML (Spark).</p>
+                </div>
+                <div style="background: rgba(74, 222, 128, 0.05); padding: 18px 20px; border-radius: 10px; border: 1px solid rgba(74, 222, 128, 0.15);">
+                    <strong style="color: #4ade80;">💾 Eficiencia en almacenamiento</strong>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Formatos columnar (ORC/Parquet) reducen espacio y mejoran velocidad.</p>
+                </div>
+            </div>
+            <p style="margin-top: 30px; text-align: center; color: #666; font-size: 0.85em;">⬆️ Presiona la flecha hacia arriba para volver</p>
+        </div>
     </section>
 </section>
 
-<!-- DIApositiva 5: DESVENTAJAS (con desplazamiento vertical) -->
+<!-- ============================================ -->
+<!-- SLIDE 5: DESVENTAJAS (vertical)              -->
+<!-- ============================================ -->
 <section>
-    <!-- Sub-diapositiva superior: Título y primeras desventajas -->
-    <section>
-        <h2> Desventajas y limitaciones (pedillos )</h2>
-        <ul>
-            <li><strong>Alta latencia:</strong> No está diseñado para consultas en tiempo real . Cada consulta tiene una sobrecarga de inicio significativa .</li>
-            <li><strong>Actualizaciones complejas:</strong> Aunque versiones recientes mejoran esto, históricamente las operaciones de actualización y borrado no son su punto fuerte.</li>
-        </ul>
-        <p style="margin-top: 30px;"><small>Presiona (↓) para ver más......</small></p>
+    <section style="background: linear-gradient(135deg, #1a0a0a, #2a1515);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                <span style="font-size: 2.5em;">⚠️</span>
+                <h2 style="margin: 0; color: #f87171; font-size: 2.2em;">Desventajas y limitaciones</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div style="background: rgba(248, 113, 113, 0.05); padding: 18px 20px; border-radius: 10px; border: 1px solid rgba(248, 113, 113, 0.15);">
+                    <strong style="color: #f87171;">⏱️ Alta latencia</strong>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">No diseñado para consultas en tiempo real (OLTP).</p>
+                </div>
+                <div style="background: rgba(248, 113, 113, 0.05); padding: 18px 20px; border-radius: 10px; border: 1px solid rgba(248, 113, 113, 0.15);">
+                    <strong style="color: #f87171;">🔄 Actualizaciones complejas</strong>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Las operaciones de actualización y borrado no son su punto fuerte.</p>
+                </div>
+            </div>
+            <p style="margin-top: 30px; text-align: center; color: #666; font-size: 0.85em;">⬇️ Presiona la flecha hacia abajo para más</p>
+        </div>
     </section>
 
-    <!-- Sub-diapositiva inferior: Resto de desventajas -->
-    <section>
-        <h2 style="margin-top: 0;"> Desventajas (continuación)</h2>
-        <ul>
-            <li><strong>Requiere configuración y tuning:</strong> Para obtener un buen rendimiento, es necesario optimizar las consultas y la configuración del clúster (particiones, formatos de archivo, etc.) .</li>
-        </ul>
-        <p style="margin-top: 30px;"><small>Presiona la flecha hacia arriba (↑) para volver</small></p>
-    </section>
-</section>
-
-<!-- DIApositiva 6: USO LABORAL (con desplazamiento vertical) -->
-<section>
-    <!-- Sub-diapositiva superior: Título y primeros usos -->
-    <section>
-        <h2> Uso laboral: ¿Para qué sirve en la industria?</h2>
-        <p>Grandes empresas como CNET, Digg, Last.fm y TaoBao lo utilizan para :</p>
-        <ul>
-            <li><strong> Minería y análisis de logs:</strong> Para entender el comportamiento del usuario, detectar errores y auditar sistemas .</li>
-            <li><strong> Data Warehousing:</strong> Almacenar datos históricos para generar informes de negocio y dashboards, que luego se visualizan en herramientas de BI .</li>
-        </ul>
-        <p style="margin-top: 30px;"><small>Presiona la flecha hacia abajo (↓) para ver más casos de uso</small></p>
-    </section>
-
-    <!-- Sub-diapositiva inferior: Resto de usos -->
-    <section>
-        <h2 style="margin-top: 0;"> usos en la chamba  (continuación)</h2>
-        <ul>
-            <li><strong> ETL (Extracción, Transformación y Carga):</strong> Como motor central para limpiar, transformar y enriquecer grandes volúmenes de datos antes de cargarlos a otros sistemas .</li>
-            <li><strong> Preparación de datos para Machine Learning:</strong> Ayudar a preparar y transformar conjuntos de datos masivos para entrenar modelos con herramientas como Spark .</li>
-        </ul>
-        <p style="margin-top: 30px;"><small>Presiona la flecha hacia arriba (↑) para volver</small></p>
+    <section style="background: linear-gradient(135deg, #1a0a0a, #2a1515);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                <span style="font-size: 2.5em;">⚠️</span>
+                <h2 style="margin: 0; color: #f87171; font-size: 2.2em;">Desventajas (continuación)</h2>
+            </div>
+            <div style="background: rgba(248, 113, 113, 0.05); padding: 18px 20px; border-radius: 10px; border: 1px solid rgba(248, 113, 113, 0.15); max-width: 70%; margin: 0 auto;">
+                <strong style="color: #f87171;">🔧 Requiere configuración y tuning</strong>
+                <p style="margin: 5px 0 0 0; font-size: 0.95em; color: #bbb;">Para obtener buen rendimiento, se debe optimizar particiones, formatos de archivo y parámetros de ejecución.</p>
+            </div>
+            <p style="margin-top: 30px; text-align: center; color: #666; font-size: 0.85em;">⬆️ Presiona la flecha hacia arriba para volver</p>
+        </div>
     </section>
 </section>
 
-<!-- DIApositiva 7: EFICACIA -->
+<!-- ============================================ -->
+<!-- SLIDE 6: USO LABORAL (vertical)             -->
+<!-- ============================================ -->
 <section>
-    <h2> ¿Es eficaz?</h2>
-    <p>Sí, y los datos lo demuestran. Su eficacia se basa en la optimización:</p>
-    <ul>
-        <li><strong>Uso de formatos columnar (ORC/Parquet):</strong> Puede <strong>reducir el espacio de almacenamiento hasta en un 90%</strong> y <strong>acelerar las consultas entre 3 y 4 veces</strong> más rápido que los formatos de texto plano .</li>
-        <li><strong>Optimizador de costes :</strong> Puede <strong>reducir el tiempo de ejecución de consultas complejas en casi un 40%</strong> .</li>
-        
-    </ul>
+    <section style="background: linear-gradient(135deg, #0f1a2e, #1a2a45);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                <span style="font-size: 2.5em;">💼</span>
+                <h2 style="margin: 0; color: #60a5fa; font-size: 2.2em;">Uso laboral</h2>
+            </div>
+            <p style="font-size: 1em; color: #aaa; margin-bottom: 15px;">Empresas como CNET, Digg, Last.fm y TaoBao lo utilizan para:</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div style="background: rgba(96, 165, 250, 0.05); padding: 18px 20px; border-radius: 10px; border: 1px solid rgba(96, 165, 250, 0.15);">
+                    <strong style="color: #60a5fa;">🔍 Minería y análisis de logs</strong>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Comportamiento de usuario, errores y auditorías.</p>
+                </div>
+                <div style="background: rgba(96, 165, 250, 0.05); padding: 18px 20px; border-radius: 10px; border: 1px solid rgba(96, 165, 250, 0.15);">
+                    <strong style="color: #60a5fa;">📊 Data Warehousing</strong>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Almacenamiento histórico para informes y dashboards.</p>
+                </div>
+            </div>
+            <p style="margin-top: 30px; text-align: center; color: #666; font-size: 0.85em;">⬇️ Presiona la flecha hacia abajo para más usos</p>
+        </div>
+    </section>
+
+    <section style="background: linear-gradient(135deg, #0f1a2e, #1a2a45);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                <span style="font-size: 2.5em;">💼</span>
+                <h2 style="margin: 0; color: #60a5fa; font-size: 2.2em;">Uso laboral (continuación)</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div style="background: rgba(96, 165, 250, 0.05); padding: 18px 20px; border-radius: 10px; border: 1px solid rgba(96, 165, 250, 0.15);">
+                    <strong style="color: #60a5fa;">⚙️ ETL</strong>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Limpieza, transformación y enriquecimiento de datos.</p>
+                </div>
+                <div style="background: rgba(96, 165, 250, 0.05); padding: 18px 20px; border-radius: 10px; border: 1px solid rgba(96, 165, 250, 0.15);">
+                    <strong style="color: #60a5fa;">🤖 Preparación para ML</strong>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Transformación de datasets masivos para entrenar modelos.</p>
+                </div>
+            </div>
+            <p style="margin-top: 30px; text-align: center; color: #666; font-size: 0.85em;">⬆️ Presiona la flecha hacia arriba para volver</p>
+        </div>
+    </section>
 </section>
 
+<!-- ============================================ -->
+<!-- SLIDE 7: EFICACIA                           -->
+<!-- ============================================ -->
+<section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+            <span style="font-size: 2.5em;">📈</span>
+            <h2 style="margin: 0; color: #f7971e; font-size: 2.2em;">¿Es eficaz?</h2>
+        </div>
+        <p style="font-size: 1.1em; color: #ccc; margin-bottom: 20px;">Sí, y los datos lo demuestran. Su eficacia se basa en la optimización:</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div style="background: rgba(247, 151, 30, 0.08); padding: 25px 20px; border-radius: 12px; border: 1px solid rgba(247, 151, 30, 0.2); text-align: center;">
+                <span style="font-size: 2.5em; display: block;">📉</span>
+                <strong style="color: #ffd200; font-size: 1.1em;">-90% de espacio</strong>
+                <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Con formatos columnar (ORC/Parquet)</p>
+            </div>
+            <div style="background: rgba(247, 151, 30, 0.08); padding: 25px 20px; border-radius: 12px; border: 1px solid rgba(247, 151, 30, 0.2); text-align: center;">
+                <span style="font-size: 2.5em; display: block;">🚀</span>
+                <strong style="color: #ffd200; font-size: 1.1em;">3-4x más rápido</strong>
+                <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Velocidad de consultas mejorada</p>
+            </div>
+            <div style="background: rgba(247, 151, 30, 0.08); padding: 25px 20px; border-radius: 12px; border: 1px solid rgba(247, 151, 30, 0.2); text-align: center; grid-column: span 2;">
+                <span style="font-size: 2.5em; display: block;">🧠</span>
+                <strong style="color: #ffd200; font-size: 1.1em;">-40% de tiempo</strong>
+                <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #bbb;">Optimizador de costes (CBO) en consultas complejas</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-
-
-<!-- SLIDE PRINCIPAL: IMAGEN + DESCRIPCIÓN CORTA -->
+<!-- ============================================ -->
+<!-- SLIDE 8: PRÁCTICA (vertical con imágenes)   -->
+<!-- ============================================ -->
 <section>
-    <!-- Sub-diapositiva 1: Imagen y descripción -->
-    <section>
-        <h2> Practica  Apache Hive</h2>
-        
-        <!-- 
-        👇 AQUÍ PONES LA DIRECCIÓN DE TU IMAGEN 
-        Reemplaza "practica1.jpeg" por el nombre real
-        -->
-        <img src="{{ site.baseurl }}/images/practica1.jpeg" 
-             alt="Congiguración" 
-             style="max-width: 70%; height: auto; margin: 0 auto; display: block; border-radius: 8px;">
-        
-        <p style="margin-top: 15px; font-size: 0.9em;">
-            <strong>Descripción:</strong> La arquitectura de Hive se compone de un <strong>Metastore</strong> que guarda los metadatos, 
-            un <strong>Optimizador</strong> que mejora el rendimiento de las consultas, y un <strong>Motor de ejecución</strong> 
+    <!-- Sub-diapositiva 1: Imagen principal -->
+    <section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                <span style="font-size: 2.5em;">🛠️</span>
+                <h2 style="margin: 0; color: #f7971e; font-size: 2.2em;">Práctica: Configuración de Hive</h2>
+            </div>
             
-        </p>
-        
-        <p style="margin-top: 20px; font-style: italic; font-size: 0.8em;">
-            🔽 Presiona presiona para ir abajo xd
-        </p>
+            <!-- 
+            📍 IMAGEN 1: Sustituye "practica1.png" por el nombre real de tu imagen
+            -->
+            <div style="background: rgba(255,255,255,0.02); border-radius: 12px; padding: 15px; border: 1px solid rgba(255,255,255,0.05);">
+                <img src="{{ site.baseurl }}/images/practica1.png" 
+                     alt="Configuración de Hive" 
+                     style="max-width: 80%; height: auto; margin: 0 auto; display: block; border-radius: 8px;">
+            </div>
+            
+            <p style="margin-top: 15px; font-size: 0.95em; color: #ccc; text-align: center;">
+                <strong style="color: #ffd200;">Descripción:</strong> Configuración inicial de Hive, definiendo el metastore y las rutas de almacenamiento.
+            </p>
+            
+            <p style="margin-top: 20px; text-align: center; color: #666; font-size: 0.85em;">⬇️ Presiona ↓ para ver el siguiente paso</p>
+        </div>
     </section>
-    
-    <!-- Sub-diapositiva 2: Detalle 1 -->
-    <section>
-        <h2> Componente 1: Metastore</h2>
-        <ul>
-        <img src="{{ site.baseurl }}/images/practica2.jpeg" 
-             alt="Congiguración" 
-             style="max-width: 70%; height: auto; margin: 0 auto; display: block; border-radius: 8px;">
-             
-            <li><strong>Función:</strong> Almacena todos los metadatos de las tablas (esquemas, particiones, ubicación en HDFS).</li>
-           
-        </ul>
-        <p style="margin-top: 20px; font-style: italic; font-size: 0.8em;">
-            🔽  Presiona presiona para ir abajo xd
-        </p>
+
+    <!-- Sub-diapositiva 2: Metastore -->
+    <section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <span style="font-size: 2em;">📁</span>
+                <h2 style="margin: 0; color: #60a5fa; font-size: 1.8em;">Componente 1: Metastore</h2>
+            </div>
+            
+            <!-- 
+            📍 IMAGEN 2: Sustituye "practica2.png" por el nombre real de tu imagen
+            -->
+            <div style="background: rgba(255,255,255,0.02); border-radius: 12px; padding: 15px; border: 1px solid rgba(255,255,255,0.05);">
+                <img src="{{ site.baseurl }}/images/practica2.png" 
+                     alt="Metastore en Hive" 
+                     style="max-width: 80%; height: auto; margin: 0 auto; display: block; border-radius: 8px;">
+            </div>
+            
+            <ul style="margin-top: 15px; font-size: 0.95em; color: #ccc;">
+                <li><strong style="color: #60a5fa;">Función:</strong> Almacena metadatos de tablas (esquemas, particiones, ubicación en HDFS).</li>
+                <li><strong style="color: #60a5fa;">Base de datos:</strong> Usa MySQL, PostgreSQL o Derby para persistencia.</li>
+            </ul>
+            
+            <p style="margin-top: 20px; text-align: center; color: #666; font-size: 0.85em;">⬇️ Presiona ↓ para continuar</p>
+        </div>
     </section>
-    
-    <!-- Sub-diapositiva 3: Detalle 2 -->
-    <section>
-        <h2> Componente 2: Optimizador de Costes (CBO)</h2>
-        <img src="{{ site.baseurl }}/images/practica3.jpeg" 
-             alt="Congiguración" 
-             style="max-width: 70%; height: auto; margin: 0 auto; display: block; border-radius: 8px;">
-        <ul>
-            <li><strong>Función:</strong> Analiza las consultas HiveQL y elige el plan de ejecución más eficiente.</li>
-            <li><strong>Beneficio:</strong> Puede reducir el tiempo de ejecución de consultas complejas hasta en un <strong>40%</strong>.</li>
-        </ul>
-        <p style="margin-top: 20px; font-style: italic; font-size: 0.8em;">
-            🔽  Presiona presiona para ir abajo xd
-        </p>
+
+    <!-- Sub-diapositiva 3: Optimizador -->
+    <section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <span style="font-size: 2em;">🧠</span>
+                <h2 style="margin: 0; color: #4ade80; font-size: 1.8em;">Componente 2: Optimizador (CBO)</h2>
+            </div>
+            
+            <!-- 
+            📍 IMAGEN 3: Sustituye "practica3.png" por el nombre real de tu imagen
+            -->
+            <div style="background: rgba(255,255,255,0.02); border-radius: 12px; padding: 15px; border: 1px solid rgba(255,255,255,0.05);">
+                <img src="{{ site.baseurl }}/images/practica3.png" 
+                     alt="Optimizador de costes Hive" 
+                     style="max-width: 80%; height: auto; margin: 0 auto; display: block; border-radius: 8px;">
+            </div>
+            
+            <ul style="margin-top: 15px; font-size: 0.95em; color: #ccc;">
+                <li><strong style="color: #4ade80;">Función:</strong> Analiza consultas HiveQL y elige el plan más eficiente.</li>
+                <li><strong style="color: #4ade80;">Beneficio:</strong> Reduce tiempo de ejecución hasta un <strong style="color: #ffd200;">40%</strong>.</li>
+            </ul>
+            
+            <p style="margin-top: 20px; text-align: center; color: #666; font-size: 0.85em;">⬇️ Presiona ↓ para continuar</p>
+        </div>
     </section>
-    
-    <!-- Sub-diapositiva 4: Detalle 3 -->
-    <section>
-        <h2> Componente 3: Motores de ejecución</h2>
-        <ul>
-            <li><strong>MapReduce:</strong> El motor clásico, estable pero más lento para consultas complejas.</li>
-            <li><strong>Apache Tez:</strong> Mejora el rendimiento al reducir la sobrecarga de E/S y agilizar los trabajos.</li>
-            <li><strong>Apache Spark:</strong> Ofrece el mejor rendimiento para consultas interactivas y análisis en memoria.</li>
-        </ul>
-        <p style="margin-top: 20px; font-style: italic; font-size: 0.8em;">
-            ya acabo xd
-        </p>
+
+    <!-- Sub-diapositiva 4: Motores -->
+    <section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 40px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <span style="font-size: 2em;">⚡</span>
+                <h2 style="margin: 0; color: #f7971e; font-size: 1.8em;">Componente 3: Motores de ejecución</h2>
+            </div>
+            
+            <!-- 
+            📍 IMAGEN 4 (opcional): Sustituye "practica4.png" si tienes una cuarta imagen
+            -->
+            <div style="background: rgba(255,255,255,0.02); border-radius: 12px; padding: 15px; border: 1px solid rgba(255,255,255,0.05);">
+                <img src="{{ site.baseurl }}/images/practica4.png" 
+                     alt="Motores de ejecución Hive" 
+                     style="max-width: 80%; height: auto; margin: 0 auto; display: block; border-radius: 8px;">
+            </div>
+            
+            <ul style="margin-top: 15px; font-size: 0.95em; color: #ccc;">
+                <li><strong style="color: #f7971e;">MapReduce:</strong> Estable pero más lento.</li>
+                <li><strong style="color: #f7971e;">Apache Tez:</strong> Reduce sobrecarga de E/S.</li>
+                <li><strong style="color: #f7971e;">Apache Spark:</strong> Mejor rendimiento para consultas interactivas.</li>
+            </ul>
+            
+            <p style="margin-top: 20px; text-align: center; color: #666; font-size: 0.85em;">⬆️ Presiona ↑ para volver al inicio de la práctica</p>
+        </div>
     </section>
+</section>
+
+<!-- ============================================ -->
+<!-- SLIDE 9: CIERRE                             -->
+<!-- ============================================ -->
+<section style="text-align: center; background: linear-gradient(135deg, #1a1a2e, #0f3460);">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+        <span style="font-size: 4em; display: block; margin-bottom: 20px;">🐝</span>
+        <h2 style="font-size: 2.8em; margin: 0; background: linear-gradient(to right, #f7971e, #ffd200); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">¡Gracias!</h2>
+        <p style="font-size: 1.5em; color: #ccc; margin: 10px 0;">Apache Hive: Big Data al alcance de todos</p>
+        <div style="width: 60px; height: 3px; background: linear-gradient(to right, #f7971e, #ffd200); margin: 15px auto;"></div>
+        <p style="font-size: 0.9em; color: #666; margin-top: 30px;">¿Preguntas?</p>
+    </div>
 </section>
