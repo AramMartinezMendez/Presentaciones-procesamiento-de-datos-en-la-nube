@@ -5,7 +5,7 @@ layout: slide
 
 <!-- ============================================ -->
 <!-- ESTILOS GLOBALES PARA EVITAR DESBORDES       -->
-<!-- ============================================ -->
+
 <style>
   .reveal .slides section {
     max-height: 92vh !important;
@@ -104,7 +104,7 @@ layout: slide
 
 <!-- ============================================ -->
 <!-- SLIDE 1: PORTADA                             -->
-<!-- ============================================ -->
+
 <section style="text-align: center; background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);">
     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
         <span style="font-size: 3.5em; display: block; margin-bottom: 10px;">🐝</span>
@@ -118,7 +118,7 @@ layout: slide
 
 <!-- ============================================ -->
 <!-- SLIDE 2: ¿QUÉ ES?                           -->
-<!-- ============================================ -->
+
 <section style="background: linear-gradient(135deg, #0d1117, #161b22);">
     <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px;">
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
@@ -148,41 +148,44 @@ layout: slide
 
 <!-- ============================================ -->
 <!-- SLIDE 3: CARACTERÍSTICAS                     -->
-<!-- ============================================ -->
 <section style="background: linear-gradient(135deg, #0d1117, #161b22);">
-    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px;">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-            <span style="font-size: 2em;">⚙️</span>
-            <h2 style="margin: 0; color: #f7971e; font-size: 1.8em;">Características</h2>
+    <section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                <span style="font-size: 2em;">⚙️</span>
+                <h2 style="margin: 0; color: #f7971e; font-size: 1.8em;">Características</h2>
+            </div>
+    </section>  
+    <setion>
+      
+            <div class="grid-2">
+                <div class="card">
+                    <strong style="color: #ffd200;">🗄️ Interfaz SQL</strong>
+                    <p style="margin: 2px 0 0 0; font-size: 0.75em; color: #bbb;">Baja barrera de entrada para equipos con SQL.</p>
+                </div>
+                <div class="card">
+                    <strong style="color: #ffd200;">☁️ Almacenamiento flexible</strong>
+                    <p style="margin: 2px 0 0 0; font-size: 0.75em; color: #bbb;">HDFS, Amazon S3 y otros sistemas.</p>
+                </div>
+                <div class="card">
+                    <strong style="color: #ffd200;">🧩 Extensible</strong>
+                    <p style="margin: 2px 0 0 0; font-size: 0.75em; color: #bbb;">Funciones personalizadas (UDF) en Java/Python.</p>
+                </div>
+                <div class="card">
+                    <strong style="color: #ffd200;">📁 Metastore centralizado</strong>
+                    <p style="margin: 2px 0 0 0; font-size: 0.75em; color: #bbb;">Metadatos en MySQL, PostgreSQL, etc.</p>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <strong style="color: #ffd200;">🚀 Optimizador de costes (CBO)</strong>
+                    <p style="margin: 2px 0 0 0; font-size: 0.75em; color: #bbb;">Mejora el rendimiento de consultas complejas.</p>
+                </div>
+            </div>
         </div>
-        <div class="grid-2">
-            <div class="card">
-                <strong style="color: #ffd200;">🗄️ Interfaz SQL</strong>
-                <p style="margin: 2px 0 0 0; font-size: 0.75em; color: #bbb;">Baja barrera de entrada para equipos con SQL.</p>
-            </div>
-            <div class="card">
-                <strong style="color: #ffd200;">☁️ Almacenamiento flexible</strong>
-                <p style="margin: 2px 0 0 0; font-size: 0.75em; color: #bbb;">HDFS, Amazon S3 y otros sistemas.</p>
-            </div>
-            <div class="card">
-                <strong style="color: #ffd200;">🧩 Extensible</strong>
-                <p style="margin: 2px 0 0 0; font-size: 0.75em; color: #bbb;">Funciones personalizadas (UDF) en Java/Python.</p>
-            </div>
-            <div class="card">
-                <strong style="color: #ffd200;">📁 Metastore centralizado</strong>
-                <p style="margin: 2px 0 0 0; font-size: 0.75em; color: #bbb;">Metadatos en MySQL, PostgreSQL, etc.</p>
-            </div>
-            <div class="card" style="grid-column: span 2;">
-                <strong style="color: #ffd200;">🚀 Optimizador de costes (CBO)</strong>
-                <p style="margin: 2px 0 0 0; font-size: 0.75em; color: #bbb;">Mejora el rendimiento de consultas complejas.</p>
-            </div>
-        </div>
-    </div>
+    </section>
 </section>
-
 <!-- ============================================ -->
 <!-- SLIDE 4: VENTAJAS (vertical)                 -->
-<!-- ============================================ -->
+
 <section>
     <!-- Sub 1 -->
     <section style="background: linear-gradient(135deg, #0d2818, #1a3a2a);">
