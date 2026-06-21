@@ -1,3 +1,8 @@
+---
+title: Apache Hive
+layout: slide
+---
+
 <!-- ajustar tamaños de slides -->
 
 <style>
@@ -19,10 +24,9 @@
 </style>
 
 
----
-title: Apache Hive
-layout: slide
----
+
+
+
 
 <!-- ============================================ -->
 <!-- SLIDE 1: PORTADA                             -->
