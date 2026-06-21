@@ -324,33 +324,40 @@ layout: slide
 </section>
 
 <!-- ============================================ -->
-<!-- SLIDE 7: EFICACIA                           -->
-<!-- ============================================ -->
-<section style="background: linear-gradient(135deg, #0d1117, #161b22);">
-    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px;">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-            <span style="font-size: 2em;">📈</span>
-            <h2 style="margin: 0; color: #f7971e; font-size: 1.8em;">¿Es eficaz?</h2>
+<!-- SLIDE 7: EFICAZ-->
+<section>
+      <section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                <span style="font-size: 2em;">📈</span>
+                <h2 style="margin: 0; color: #f7971e; font-size: 1.8em;">¿Es eficaz?</h2>
+            </div>
+         </div>
+    </section>
+   
+    <section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px;">       
+            <p style="font-size: 0.85em; color: #ccc; margin-bottom: 12px;">Sí, con optimizaciones:</p>
+            <div class="grid-2">
+                <div style="background: rgba(247, 151, 30, 0.08); padding: 15px; border-radius: 10px; border: 1px solid rgba(247, 151, 30, 0.15); text-align: center;">
+                    <span style="font-size: 2em; display: block;">📉</span>
+                    <strong style="color: #ffd200; font-size: 1em;">-90% espacio</strong>
+                    <p style="margin: 2px 0 0 0; font-size: 0.7em; color: #bbb;">Con ORC/Parquet</p>
+                </div>
+                <div style="background: rgba(247, 151, 30, 0.08); padding: 15px; border-radius: 10px; border: 1px solid rgba(247, 151, 30, 0.15); text-align: center;">
+                    <span style="font-size: 2em; display: block;">🚀</span>
+                    <strong style="color: #ffd200; font-size: 1em;">3-4x más rápido</strong>
+                    <p style="margin: 2px 0 0 0; font-size: 0.7em; color: #bbb;">Velocidad de consultas</p>
+                </div>
+                <div style="background: rgba(247, 151, 30, 0.08); padding: 15px; border-radius: 10px; border: 1px solid rgba(247, 151, 30, 0.15); text-align: center; grid-column: span 2;">
+                    <span style="font-size: 2em; display: block;">🧠</span>
+                    <strong style="color: #ffd200; font-size: 1em;">-40% tiempo</strong>
+                    <p style="margin: 2px 0 0 0; font-size: 0.7em; color: #bbb;">Optimizador de costes (CBO)</p>
+                </div>
+            </div>
         </div>
-        <p style="font-size: 0.85em; color: #ccc; margin-bottom: 12px;">Sí, con optimizaciones:</p>
-        <div class="grid-2">
-            <div style="background: rgba(247, 151, 30, 0.08); padding: 15px; border-radius: 10px; border: 1px solid rgba(247, 151, 30, 0.15); text-align: center;">
-                <span style="font-size: 2em; display: block;">📉</span>
-                <strong style="color: #ffd200; font-size: 1em;">-90% espacio</strong>
-                <p style="margin: 2px 0 0 0; font-size: 0.7em; color: #bbb;">Con ORC/Parquet</p>
-            </div>
-            <div style="background: rgba(247, 151, 30, 0.08); padding: 15px; border-radius: 10px; border: 1px solid rgba(247, 151, 30, 0.15); text-align: center;">
-                <span style="font-size: 2em; display: block;">🚀</span>
-                <strong style="color: #ffd200; font-size: 1em;">3-4x más rápido</strong>
-                <p style="margin: 2px 0 0 0; font-size: 0.7em; color: #bbb;">Velocidad de consultas</p>
-            </div>
-            <div style="background: rgba(247, 151, 30, 0.08); padding: 15px; border-radius: 10px; border: 1px solid rgba(247, 151, 30, 0.15); text-align: center; grid-column: span 2;">
-                <span style="font-size: 2em; display: block;">🧠</span>
-                <strong style="color: #ffd200; font-size: 1em;">-40% tiempo</strong>
-                <p style="margin: 2px 0 0 0; font-size: 0.7em; color: #bbb;">Optimizador de costes (CBO)</p>
-            </div>
-        </div>
-    </div>
+    </section>
+
 </section>
 
 <!-- ============================================ -->
