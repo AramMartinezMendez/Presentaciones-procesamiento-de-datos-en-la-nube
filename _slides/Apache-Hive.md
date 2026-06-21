@@ -1,3 +1,24 @@
+<!-- ajustar tamaños de slides -->
+
+<style>
+  .reveal .slides section {
+    max-height: 90vh !important;
+    overflow: hidden !important;
+  }
+  .reveal .slides section > * {
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+  .reveal ul, .reveal p {
+    font-size: 0.9em !important;
+    line-height: 1.4 !important;
+  }
+  .reveal li {
+    margin-bottom: 8px !important;
+  }
+</style>
+
+
 ---
 title: Apache Hive
 layout: slide
