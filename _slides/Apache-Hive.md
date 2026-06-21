@@ -148,16 +148,20 @@ layout: slide
 
 <!-- ============================================ -->
 <!-- SLIDE 3: CARACTERÍSTICAS                     -->
-<section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+<section>   
     <section style="background: linear-gradient(135deg, #0d1117, #161b22);">
         <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px;">
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
                 <span style="font-size: 2em;">⚙️</span>
                 <h2 style="margin: 0; color: #f7971e; font-size: 1.8em;">Características</h2>
             </div>
-    </section>  
-    <setion>
-      
+        </div>
+    </section>
+  
+    <section style="background: linear-gradient(135deg, #0d1117, #161b22);">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">              
+            </div>
             <div class="grid-2">
                 <div class="card">
                     <strong style="color: #ffd200;">🗄️ Interfaz SQL</strong>
@@ -182,8 +186,8 @@ layout: slide
             </div>
         </div>
     </section>
+  
 </section>
-<!-- ============================================ -->
 <!-- SLIDE 4: VENTAJAS (vertical)                 -->
 
 <section>
